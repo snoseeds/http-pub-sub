@@ -3,6 +3,7 @@ exclude_patterns:
 - ".env"
 - ".env.test"
 - "**/*.json"
+- "**/*.spec.ts"
 - "test/"
 - "src/scripts/"
 - "src/migration/"

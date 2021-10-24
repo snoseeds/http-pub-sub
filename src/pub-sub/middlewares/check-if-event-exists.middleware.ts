@@ -15,12 +15,7 @@ export class CheckIfEventExistsMiddleware implements NestMiddleware {
     try {
       const eventResult: Event = await this.eventRepo.findOne(req.params.eventID);
       if (!eventResult) {
-        return res.status(404).send(new JSendResponseDto(
-          "failed",
-          404,
-          `The event with id '${req.params.eventID}' does not exist on this platform`,
-          null
-        ));
+        throw "No event";
       }
       req.body.eventResult = eventResult;
       return next();
