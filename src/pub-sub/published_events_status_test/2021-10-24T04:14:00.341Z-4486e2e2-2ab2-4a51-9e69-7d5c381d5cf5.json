@@ -1,0 +1,22 @@
+{
+  "statusMessage": "ALL_SUCCESSFUL",
+  "eventDetails": {
+    "statusCode": "200",
+    "dataJSON": "{\"zeal\":\"Audacity is a strength\"}",
+    "topic": {
+      "name": "undefined",
+      "lastChangedDateTime": "2021-10-24T04:14:00.333Z",
+      "id": "e3c742f5-2ef8-4983-90b3-4e3e2d14cb29",
+      "createDateTime": "2021-10-24T04:14:00.333Z",
+      "publishedEventsCount": 0
+    },
+    "totalNoOfSubscribers": 0,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-24T04:14:00.387Z",
+    "numPublishedSuccessfully": 0,
+    "numPublishedUnsuccessfully": 0,
+    "id": "4486e2e2-2ab2-4a51-9e69-7d5c381d5cf5",
+    "createDateTime": "2021-10-24T04:14:00.341Z"
+  },
+  "webhooksStatusesAndValues": []
+}

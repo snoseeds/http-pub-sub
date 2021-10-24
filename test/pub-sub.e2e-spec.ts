@@ -41,7 +41,14 @@ describe('PubSubController (e2e)', () => {
         console.log(err);
       }
     }
+    // Making sure to unregister nock from listening to the urls registered to it
+    nock.cleanAll();
   });
+
+  afterAll(() => {
+    // Making sure to unregister nock from listening to the urls registered to it
+    nock.cleanAll();
+  })
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({

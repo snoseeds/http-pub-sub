@@ -75,18 +75,13 @@ export class PubSubService {
   async publish(listeners: string[], createdEvent: Event) {
     try {  
       const webhooksStatusesAndValues: AllSettledPromiseIndividualResult[] = await PubSubService.dispatchEventsConcurrently(listeners, JSON.parse(createdEvent.dataJSON));
-      let numPublishedSuccessfully = 0;
-      let numPublishedUnsuccessfully = 0;
+      let numPublishedSuccessfully = 0, numPublishedUnsuccessfully = 0, totalNoOfSubscribers = listeners.length;
       webhooksStatusesAndValues.forEach((result: AllSettledPromiseIndividualResult) => {
         result.status === "fulfilled" ? numPublishedSuccessfully++ : numPublishedUnsuccessfully++
       });
-      const totalNoOfSubscribers = listeners.length;
       const numPendingPublish = totalNoOfSubscribers - (numPublishedSuccessfully + numPublishedUnsuccessfully);
       const { statusCode } = PubSubService.getStatus(totalNoOfSubscribers, numPublishedSuccessfully, numPublishedUnsuccessfully);
-      const eventDetails = await this.eventRepo
-        .updateEventStatus(
-          createdEvent,
-          {
+      const eventDetails = await this.eventRepo.updateEventStatus(createdEvent, {
             statusCode,
             numPendingPublish,
             numPublishedSuccessfully,
@@ -99,10 +94,7 @@ export class PubSubService {
         webhooksStatusesAndValues
       });
       fs.writeFileSync(join(__dirname, process.env['EVENTS_LOG_DIR'], `${createdEvent.createDateTime.toISOString()}-${createdEvent.id}.json`), JSON.stringify(eventStatusLogObj, null, 2));
-      
       console.log(`Done logging the status object of the event with id of '${createdEvent.id}'`);
-    } catch (err) {
-
-    }
+    } catch (err) { throw err; }
   }
 }

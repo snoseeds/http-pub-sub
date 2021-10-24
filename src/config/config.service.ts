@@ -3,8 +3,8 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { join } from 'path';
 import path from "path"
 
-// const MODE = 'DEV'; // DEV, PROD
-const MODE = 'TEST';
+const MODE = 'DEV'; // DEV, PROD
+// const MODE = 'TEST';
 
 const envResolver = {
   prod(): void {

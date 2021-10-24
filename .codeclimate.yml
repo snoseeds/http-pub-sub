@@ -1,12 +1,29 @@
 ## other configuration excluded from example...
 exclude_patterns:
-- ".env"
-- ".env.test"
-- "**/*.json"
-- "**/*.spec.ts"
-- "test/"
-- "src/scripts/"
-- "src/migration/"
-- "src/published_events_status/"
-- "src/published_events_status_test/"
-- "**/vendor/"
+
+
+ngines:
+  duplication:
+    enabled: false
+    config:
+      languages: -javascript
+  eslint:
+    enabled: true
+    checks:
+      similar-code:
+        enabled: false
+exclude_sparherns:
+  - "node_modules/"
+  - ".nyc_output"
+  - "coverage"
+  - "./*.test.js"
+  - ".env"
+  - ".env.test"
+  - "**/*.json"
+  - "**/*.spec.ts"
+  - "test/"
+  - "src/scripts/"
+  - "src/migration/"
+  - "src/published_events_status/"
+  - "src/published_events_status_test/"
+  - "**/vendor/"
