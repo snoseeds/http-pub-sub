@@ -1,0 +1,47 @@
+{
+  "eventDetails": {
+    "statusCode": "207",
+    "dataJSON": "{\"morale\":\"Yes, we can!\"}",
+    "topic": {
+      "id": "0b1d4392-9aa5-498d-9217-954e88240479",
+      "createDateTime": "2021-10-23T22:14:24.207Z",
+      "lastChangedDateTime": "2021-10-23T22:24:56.307Z",
+      "name": "javascript",
+      "publishedEventsCount": 2
+    },
+    "totalNoOfSubscribers": 3,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T22:24:56.337Z",
+    "numPublishedSuccessfully": 2,
+    "numPublishedUnsuccessfully": 1,
+    "id": "5c496668-6169-47d4-940c-7b5a84e29219",
+    "createDateTime": "2021-10-23T22:24:56.317Z"
+  },
+  "webhooksStatusesAndValues": [
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:5600/madeToFail",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:5600"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8000/nestjs",
+        "data": {
+          "responseMessage": "Thanks for the update to nestjs!"
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8000/nodejs",
+        "data": {
+          "responseMessage": "Thanks for the update to nodejs!"
+        }
+      }
+    }
+  ]
+}

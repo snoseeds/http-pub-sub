@@ -1,0 +1,14 @@
+{
+  "eventTargetType": "Topic",
+  "eventTargetTypeIdColVal": "8aa9c057-15ed-456e-baa6-f91112f98fd1",
+  "dataJSON": "{\"cheers\":\"to greateer places\"}",
+  "lastChangedDateTime": "2021-10-02T13:19:24.365Z",
+  "id": "9feb9f70-ac45-4a09-acd2-a9e269936f8d",
+  "createDateTime": "2021-10-02T13:19:24.365Z",
+  "webhooksStatusesAndValues": [
+    {
+      "status": "fulfilled",
+      "value": "http://localhost:8000/event"
+    }
+  ]
+}

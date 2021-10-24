@@ -1,0 +1,51 @@
+{
+  "statusMessage": "ALL_NOT_AVAILABLE",
+  "eventDetails": {
+    "statusCode": "503",
+    "dataJSON": "{\"inspiration\":\"Audacity is a strength\"}",
+    "topic": {
+      "id": "bcc5464b-9a49-42a0-ab8c-973f8fbca66c",
+      "createDateTime": "2021-10-23T23:49:30.858Z",
+      "lastChangedDateTime": "2021-10-23T23:49:30.986Z",
+      "name": "capacity",
+      "publishedEventsCount": 1
+    },
+    "totalNoOfSubscribers": 4,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T23:49:31.100Z",
+    "numPublishedSuccessfully": 0,
+    "numPublishedUnsuccessfully": 4,
+    "id": "3cfc0aee-975d-4759-8fa4-fb551dfd0db5",
+    "createDateTime": "2021-10-23T23:49:30.997Z"
+  },
+  "webhooksStatusesAndValues": [
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8000",
+        "error": "Error: Request failed with status code 404"
+      }
+    },
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8001",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:8001"
+      }
+    },
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8002",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:8002"
+      }
+    },
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8003",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:8003"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventDetails": {
+    "statusCode": "200",
+    "dataJSON": "{\"life\":\"always to be figured out\"}",
+    "topic": {
+      "name": "idiosyncracy",
+      "lastChangedDateTime": "2021-10-23T22:21:24.568Z",
+      "id": "1809b2ac-8fc4-402e-8516-e346e77f40d4",
+      "createDateTime": "2021-10-23T22:21:24.568Z",
+      "publishedEventsCount": 0
+    },
+    "totalNoOfSubscribers": 0,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T22:21:24.647Z",
+    "numPublishedSuccessfully": 0,
+    "numPublishedUnsuccessfully": 0,
+    "id": "64a1abcf-8cf1-4ce2-b4ac-4a982e2e224a",
+    "createDateTime": "2021-10-23T22:21:24.577Z"
+  },
+  "webhooksStatusesAndValues": []
+}

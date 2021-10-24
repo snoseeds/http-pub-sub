@@ -1,0 +1,51 @@
+{
+  "statusMessage": "ALL_SUCCESSFUL",
+  "eventDetails": {
+    "statusCode": "200",
+    "dataJSON": "{\"motivation\":\"effective empathy\"}",
+    "topic": {
+      "id": "bcc5464b-9a49-42a0-ab8c-973f8fbca66c",
+      "createDateTime": "2021-10-23T23:49:30.858Z",
+      "lastChangedDateTime": "2021-10-23T23:49:31.593Z",
+      "name": "capacity",
+      "publishedEventsCount": 2
+    },
+    "totalNoOfSubscribers": 4,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T23:49:31.661Z",
+    "numPublishedSuccessfully": 4,
+    "numPublishedUnsuccessfully": 0,
+    "id": "88171618-e1ed-419a-b448-3d16fb6d2e5c",
+    "createDateTime": "2021-10-23T23:49:31.598Z"
+  },
+  "webhooksStatusesAndValues": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8000",
+        "data": "Thanks for posting to this channel: 'http://localhost:8000'"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8001",
+        "data": "Thanks for posting to this channel: 'http://localhost:8001'"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8002",
+        "data": "Thanks for posting to this channel: 'http://localhost:8002'"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8003",
+        "data": "Thanks for posting to this channel: 'http://localhost:8003'"
+      }
+    }
+  ]
+}

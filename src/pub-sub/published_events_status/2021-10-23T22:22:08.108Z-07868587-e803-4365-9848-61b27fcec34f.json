@@ -1,0 +1,43 @@
+{
+  "eventDetails": {
+    "statusCode": "503",
+    "dataJSON": "{\"morale\":\"puzzled and humbled\"}",
+    "topic": {
+      "id": "0b1d4392-9aa5-498d-9217-954e88240479",
+      "createDateTime": "2021-10-23T22:14:24.207Z",
+      "lastChangedDateTime": "2021-10-23T22:22:08.097Z",
+      "name": "javascript",
+      "publishedEventsCount": 1
+    },
+    "totalNoOfSubscribers": 3,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T22:22:08.149Z",
+    "numPublishedSuccessfully": 0,
+    "numPublishedUnsuccessfully": 3,
+    "id": "07868587-e803-4365-9848-61b27fcec34f",
+    "createDateTime": "2021-10-23T22:22:08.108Z"
+  },
+  "webhooksStatusesAndValues": [
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:5600/madeToFail",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:5600"
+      }
+    },
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8000/nestjs",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:8000"
+      }
+    },
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8000/nodejs",
+        "error": "Error: connect ECONNREFUSED 127.0.0.1:8000"
+      }
+    }
+  ]
+}

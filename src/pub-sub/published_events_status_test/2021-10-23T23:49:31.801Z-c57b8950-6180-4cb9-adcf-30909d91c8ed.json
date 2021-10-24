@@ -1,0 +1,51 @@
+{
+  "statusMessage": "MIXED_RESULT",
+  "eventDetails": {
+    "statusCode": "207",
+    "dataJSON": "{\"zeal\":\"Audacity is a strength\"}",
+    "topic": {
+      "id": "bcc5464b-9a49-42a0-ab8c-973f8fbca66c",
+      "createDateTime": "2021-10-23T23:49:30.858Z",
+      "lastChangedDateTime": "2021-10-23T23:49:31.795Z",
+      "name": "capacity",
+      "publishedEventsCount": 3
+    },
+    "totalNoOfSubscribers": 4,
+    "numPendingPublish": 0,
+    "lastChangedDateTime": "2021-10-23T23:49:31.881Z",
+    "numPublishedSuccessfully": 3,
+    "numPublishedUnsuccessfully": 1,
+    "id": "c57b8950-6180-4cb9-adcf-30909d91c8ed",
+    "createDateTime": "2021-10-23T23:49:31.801Z"
+  },
+  "webhooksStatusesAndValues": [
+    {
+      "status": "rejected",
+      "reason": {
+        "webHookUrl": "http://localhost:8000",
+        "error": "Error: Nock: No match for request {\n  \"method\": \"POST\",\n  \"url\": \"http://localhost:8000/\",\n  \"headers\": {\n    \"accept\": \"application/json, text/plain, */*\",\n    \"content-type\": \"application/json\",\n    \"user-agent\": \"axios/0.22.0\",\n    \"content-length\": 33\n  },\n  \"body\": \"{\\\"zeal\\\":\\\"Audacity is a strength\\\"}\"\n}"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8001",
+        "data": "Thanks for posting to this channel: 'http://localhost:8001'"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8002",
+        "data": "Thanks for posting to this channel: 'http://localhost:8002'"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "webHookUrl": "http://localhost:8003",
+        "data": "Thanks for posting to this channel: 'http://localhost:8003'"
+      }
+    }
+  ]
+}
