@@ -1,10 +1,8 @@
 # http-pub-sub
 Node.js (Typescript & NestJS) developed RESTFul APIs for topic http based pub sub
 
-[![Build Status](https://travis-ci.com/snoseeds/http-pub-sub.svg?branch=develop)](https://travis-ci.com/snoseeds/http-pub-sub)
 [![Maintainability](https://api.codeclimate.com/v1/badges/87cbfa83452cbb0dd136/maintainability)](https://codeclimate.com/github/snoseeds/http-pub-sub/maintainability)
-[![GitHub license](https://img.shields.io/github/license/snoseeds/http-pub-sub.svg)](https://github.com/snoseeds/http-pub-sub/blob/main/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/snoseeds/http-pub-sub/badge.svg?branch=develop)](https://coveralls.io/github/snoseeds/http-pub-sub?branch=main)
+[![GitHub license](https://img.shields.io/github/license/snoseeds/Banka.svg)](https://github.com/snoseeds/http-pub-sub/blob/main/LICENSE)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/87cbfa83452cbb0dd136/test_coverage)](https://codeclimate.com/github/snoseeds/http-pub-sub/test_coverage)
 
 ## API Documentation

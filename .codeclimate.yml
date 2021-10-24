@@ -1,0 +1,11 @@
+## other configuration excluded from example...
+exclude_patterns:
+- ".env"
+- ".env.test"
+- "**/*.json"
+- "test/"
+- "src/scripts/"
+- "src/migration/"
+- "src/published_events_status/"
+- "src/published_events_status_test/"
+- "**/vendor/"
